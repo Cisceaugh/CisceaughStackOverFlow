@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyQuestionsViewController.h
 //  CiscoStackOverFlow
 //
 //  Created by Francisco Ragland Jr on 12/8/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MyQuestionsViewController : UIViewController
 
 @end
-

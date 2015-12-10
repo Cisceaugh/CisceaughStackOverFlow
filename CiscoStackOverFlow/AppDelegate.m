@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "OAuthWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,51 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self getAccessToken];
     return YES;
+}
+
+- (void)getAccessToken{
+    
+    //get current defaults
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //get accessToken from defaults
+    NSString *accessToken = [userDefaults stringForKey:@"accessToken"];
+    
+    //if there isnt an accessToken...
+    if (!accessToken) {
+        
+        //make rootVC equal to this windows rootVC
+        UIViewController *rootViewController = self.window.rootViewController;
+        
+        //alloc init OAuthWebVC
+        OAuthWebViewController *oAuthVC = [[OAuthWebViewController alloc] init];
+        
+        //make weak type of oAuthVC,keeps from infinite cycle
+        __weak typeof(oAuthVC) weakOAuthVC = oAuthVC;
+        
+        //upon oAuthVC completion do...
+        oAuthVC.completion = ^() {
+            
+            //make strong oAuthVC from weakOAuthVC
+            __strong typeof (oAuthVC) strongOAuthVC =weakOAuthVC;
+            
+            //remove OAuthWebViewController from superView
+            [strongOAuthVC.view removeFromSuperview];
+            //remove it from parent
+            [strongOAuthVC removeFromParentViewController];
+        };
+        
+        //add child
+        [rootViewController addChildViewController:oAuthVC];
+        //add child as subview
+        [rootViewController.view addSubview:oAuthVC.view];
+        //move to new rootVC, oAuthVC
+        [oAuthVC didMoveToParentViewController:rootViewController];
+        
+    }
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

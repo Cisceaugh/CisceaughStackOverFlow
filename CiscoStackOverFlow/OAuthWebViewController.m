@@ -8,7 +8,15 @@
 
 #import "OAuthWebViewController.h"
 
-@interface OAuthWebViewController ()
+@import WebKit;
+
+NSString const *kClientID = @"6123";
+NSString const *kBaseURL = @"https://stackexchange.com/oauth/dialog?";
+NSString const *kRedirectURI = @"https://stackexchange.com/oauth/login_success";
+
+@interface OAuthWebViewController () <WKNavigationDelegate>
+
+@property (strong, nonatomic) WKWebView *webView;
 
 @end
 
@@ -17,6 +25,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.webView = [[WKWebView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:self.webView];
+    self.webView.navigationDelegate = self;
+    NSString *stackURLString = [NSString stringWithFormat:@"%@client_id=%@&redirect_uri=%@", kBaseURL, kClientID, kRedirectURI];
+    NSLog(@"%@", stackURLString);
+    NSURL *stackURL = [NSURL URLWithString:stackURLString];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:stackURL]];
+    
+}
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    
+    NSURLRequest *request = navigationAction.request;
+    NSURL *requestURL = request.URL;
+    
+    if ([requestURL.description containsString:@"access_token"]) {
+        NSArray *urlComponents = [[requestURL description] componentsSeparatedByString:@"="];
+        NSString *secondToLast = [urlComponents objectAtIndex:(urlComponents.count -2)];
+        NSArray *actualToken = [secondToLast componentsSeparatedByString:@"&"];
+        
+        
+        NSString *accessToken = actualToken.firstObject;
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:accessToken forKey:@"accessToken"];
+        [userDefaults synchronize];
+        
+        NSLog(@"%@", accessToken);
+        
+        if (self.completion) {
+            self.completion();
+        }
+    }
+
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 - (void)didReceiveMemoryWarning {

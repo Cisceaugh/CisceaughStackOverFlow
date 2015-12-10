@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70567D34CF3F899783ACB40B /* libPods-CiscoStackOverFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F96F60D9969E9059DA5BF /* libPods-CiscoStackOverFlow.a */; };
 		C15C5F011C1789B5002D1386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F001C1789B5002D1386 /* main.m */; };
 		C15C5F041C1789B5002D1386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F031C1789B5002D1386 /* AppDelegate.m */; };
-		C15C5F071C1789B5002D1386 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F061C1789B5002D1386 /* ViewController.m */; };
+		C15C5F071C1789B5002D1386 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F061C1789B5002D1386 /* MenuTableViewController.m */; };
 		C15C5F0A1C1789B5002D1386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15C5F081C1789B5002D1386 /* Main.storyboard */; };
 		C15C5F0D1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F0B1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld */; };
 		C15C5F0F1C1789B5002D1386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C15C5F0E1C1789B5002D1386 /* Assets.xcassets */; };
 		C15C5F121C1789B5002D1386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C15C5F101C1789B5002D1386 /* LaunchScreen.storyboard */; };
 		C15C5F1D1C1789B5002D1386 /* CiscoStackOverFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F1C1C1789B5002D1386 /* CiscoStackOverFlowTests.m */; };
 		C15C5F281C1789B5002D1386 /* CiscoStackOverFlowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F271C1789B5002D1386 /* CiscoStackOverFlowUITests.m */; };
+		C15C5F3A1C17A443002D1386 /* OAuthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F391C17A443002D1386 /* OAuthWebViewController.m */; };
+		C15C5F3D1C17C050002D1386 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F3C1C17C050002D1386 /* ContentViewController.m */; };
+		C15C5F401C17C127002D1386 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F3F1C17C127002D1386 /* MyQuestionsViewController.m */; };
+		C15C5F431C17C271002D1386 /* BurgerMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F421C17C271002D1386 /* BurgerMenuViewController.m */; };
+		C15C5F461C18E14C002D1386 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C15C5F451C18E14C002D1386 /* menuButton.png */; };
+		C15C5F4C1C18F5E2002D1386 /* JSONRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CB702809361494DEA2EE99 /* Pods-CiscoStackOverFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiscoStackOverFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow.debug.xcconfig"; sourceTree = "<group>"; };
+		339F96F60D9969E9059DA5BF /* libPods-CiscoStackOverFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CiscoStackOverFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A41A497C6E1898A04454564 /* Pods-CiscoStackOverFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiscoStackOverFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow.release.xcconfig"; sourceTree = "<group>"; };
 		C15C5EFC1C1789B5002D1386 /* CiscoStackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiscoStackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C5F001C1789B5002D1386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C15C5F021C1789B5002D1386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C15C5F031C1789B5002D1386 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C15C5F051C1789B5002D1386 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C15C5F061C1789B5002D1386 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C15C5F051C1789B5002D1386 /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		C15C5F061C1789B5002D1386 /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		C15C5F091C1789B5002D1386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C15C5F0C1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CiscoStackOverFlow.xcdatamodel; sourceTree = "<group>"; };
 		C15C5F0E1C1789B5002D1386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +63,18 @@
 		C15C5F231C1789B5002D1386 /* CiscoStackOverFlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiscoStackOverFlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C5F271C1789B5002D1386 /* CiscoStackOverFlowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CiscoStackOverFlowUITests.m; sourceTree = "<group>"; };
 		C15C5F291C1789B5002D1386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15C5F381C17A443002D1386 /* OAuthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthWebViewController.h; sourceTree = "<group>"; };
+		C15C5F391C17A443002D1386 /* OAuthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthWebViewController.m; sourceTree = "<group>"; };
+		C15C5F3B1C17C050002D1386 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		C15C5F3C1C17C050002D1386 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		C15C5F3E1C17C127002D1386 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQuestionsViewController.h; sourceTree = "<group>"; };
+		C15C5F3F1C17C127002D1386 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQuestionsViewController.m; sourceTree = "<group>"; };
+		C15C5F411C17C271002D1386 /* BurgerMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurgerMenuViewController.h; sourceTree = "<group>"; };
+		C15C5F421C17C271002D1386 /* BurgerMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurgerMenuViewController.m; sourceTree = "<group>"; };
+		C15C5F451C18E14C002D1386 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuButton.png; path = ../../../../Downloads/menuButton.png; sourceTree = "<group>"; };
+		C15C5F4A1C18F568002D1386 /* JSONRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRequestService.h; sourceTree = "<group>"; };
+		C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestService.m; sourceTree = "<group>"; };
+		C15C5F4D1C18F72B002D1386 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70567D34CF3F899783ACB40B /* libPods-CiscoStackOverFlow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +103,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60DEFD5025D1A3E03C4D11C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00CB702809361494DEA2EE99 /* Pods-CiscoStackOverFlow.debug.xcconfig */,
+				7A41A497C6E1898A04454564 /* Pods-CiscoStackOverFlow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		861CB9E2DC380199A3A3ED2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				339F96F60D9969E9059DA5BF /* libPods-CiscoStackOverFlow.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C15C5EF31C1789B5002D1386 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +127,8 @@
 				C15C5F1B1C1789B5002D1386 /* CiscoStackOverFlowTests */,
 				C15C5F261C1789B5002D1386 /* CiscoStackOverFlowUITests */,
 				C15C5EFD1C1789B5002D1386 /* Products */,
+				60DEFD5025D1A3E03C4D11C3 /* Pods */,
+				861CB9E2DC380199A3A3ED2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +145,9 @@
 		C15C5EFE1C1789B5002D1386 /* CiscoStackOverFlow */ = {
 			isa = PBXGroup;
 			children = (
-				C15C5F021C1789B5002D1386 /* AppDelegate.h */,
-				C15C5F031C1789B5002D1386 /* AppDelegate.m */,
-				C15C5F051C1789B5002D1386 /* ViewController.h */,
-				C15C5F061C1789B5002D1386 /* ViewController.m */,
-				C15C5F081C1789B5002D1386 /* Main.storyboard */,
-				C15C5F0E1C1789B5002D1386 /* Assets.xcassets */,
-				C15C5F101C1789B5002D1386 /* LaunchScreen.storyboard */,
-				C15C5F131C1789B5002D1386 /* Info.plist */,
-				C15C5F0B1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld */,
+				C15C5F371C17935C002D1386 /* Model */,
+				C15C5F351C17933F002D1386 /* View */,
+				C15C5F361C179355002D1386 /* Controller */,
 				C15C5EFF1C1789B5002D1386 /* Supporting Files */,
 			);
 			path = CiscoStackOverFlow;
@@ -120,6 +156,13 @@
 		C15C5EFF1C1789B5002D1386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C15C5F021C1789B5002D1386 /* AppDelegate.h */,
+				C15C5F031C1789B5002D1386 /* AppDelegate.m */,
+				C15C5F0E1C1789B5002D1386 /* Assets.xcassets */,
+				C15C5F451C18E14C002D1386 /* menuButton.png */,
+				C15C5F101C1789B5002D1386 /* LaunchScreen.storyboard */,
+				C15C5F131C1789B5002D1386 /* Info.plist */,
+				C15C5F0B1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld */,
 				C15C5F001C1789B5002D1386 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +186,49 @@
 			path = CiscoStackOverFlowUITests;
 			sourceTree = "<group>";
 		};
+		C15C5F351C17933F002D1386 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5F081C1789B5002D1386 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C15C5F361C179355002D1386 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5F441C17C27D002D1386 /* BurgerMenu */,
+				C15C5F051C1789B5002D1386 /* MenuTableViewController.h */,
+				C15C5F061C1789B5002D1386 /* MenuTableViewController.m */,
+				C15C5F381C17A443002D1386 /* OAuthWebViewController.h */,
+				C15C5F391C17A443002D1386 /* OAuthWebViewController.m */,
+				C15C5F3B1C17C050002D1386 /* ContentViewController.h */,
+				C15C5F3C1C17C050002D1386 /* ContentViewController.m */,
+				C15C5F3E1C17C127002D1386 /* MyQuestionsViewController.h */,
+				C15C5F3F1C17C127002D1386 /* MyQuestionsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C15C5F371C17935C002D1386 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5F4A1C18F568002D1386 /* JSONRequestService.h */,
+				C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */,
+				C15C5F4D1C18F72B002D1386 /* Constants.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C15C5F441C17C27D002D1386 /* BurgerMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5F411C17C271002D1386 /* BurgerMenuViewController.h */,
+				C15C5F421C17C271002D1386 /* BurgerMenuViewController.m */,
+			);
+			name = BurgerMenu;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C15C5F2C1C1789B5002D1386 /* Build configuration list for PBXNativeTarget "CiscoStackOverFlow" */;
 			buildPhases = (
+				B2BFF54B22AC9577AF350570 /* Check Pods Manifest.lock */,
 				C15C5EF81C1789B5002D1386 /* Sources */,
 				C15C5EF91C1789B5002D1386 /* Frameworks */,
 				C15C5EFA1C1789B5002D1386 /* Resources */,
+				0B776FE69CB2212CE5109435 /* Embed Pods Frameworks */,
+				5EEAC740C67C668EAF2B0E88 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +340,7 @@
 			files = (
 				C15C5F121C1789B5002D1386 /* LaunchScreen.storyboard in Resources */,
 				C15C5F0F1C1789B5002D1386 /* Assets.xcassets in Resources */,
+				C15C5F461C18E14C002D1386 /* menuButton.png in Resources */,
 				C15C5F0A1C1789B5002D1386 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,15 +361,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B776FE69CB2212CE5109435 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEAC740C67C668EAF2B0E88 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2BFF54B22AC9577AF350570 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C15C5EF81C1789B5002D1386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C15C5F071C1789B5002D1386 /* ViewController.m in Sources */,
+				C15C5F431C17C271002D1386 /* BurgerMenuViewController.m in Sources */,
+				C15C5F071C1789B5002D1386 /* MenuTableViewController.m in Sources */,
+				C15C5F4C1C18F5E2002D1386 /* JSONRequestService.m in Sources */,
 				C15C5F041C1789B5002D1386 /* AppDelegate.m in Sources */,
+				C15C5F3D1C17C050002D1386 /* ContentViewController.m in Sources */,
 				C15C5F0D1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld in Sources */,
+				C15C5F3A1C17A443002D1386 /* OAuthWebViewController.m in Sources */,
 				C15C5F011C1789B5002D1386 /* main.m in Sources */,
+				C15C5F401C17C127002D1386 /* MyQuestionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +561,7 @@
 		};
 		C15C5F2D1C1789B5002D1386 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CB702809361494DEA2EE99 /* Pods-CiscoStackOverFlow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CiscoStackOverFlow/Info.plist;
@@ -429,6 +573,7 @@
 		};
 		C15C5F2E1C1789B5002D1386 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A41A497C6E1898A04454564 /* Pods-CiscoStackOverFlow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CiscoStackOverFlow/Info.plist;
@@ -505,6 +650,7 @@
 				C15C5F2E1C1789B5002D1386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15C5F2F1C1789B5002D1386 /* Build configuration list for PBXNativeTarget "CiscoStackOverFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +659,7 @@
 				C15C5F311C1789B5002D1386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C15C5F321C1789B5002D1386 /* Build configuration list for PBXNativeTarget "CiscoStackOverFlowUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +668,7 @@
 				C15C5F341C1789B5002D1386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

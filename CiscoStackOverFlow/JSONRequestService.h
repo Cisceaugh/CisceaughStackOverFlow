@@ -6,8 +6,10 @@
 //  Copyright © 2015 Francisco Ragland. All rights reserved.
 //
 
-#ifndef JSONRequestService_h
-#define JSONRequestService_h
+#import <Foundation/Foundation.h>
+#import "Constants.h"
 
+@interface JSONRequestService : NSObject
++(void)getRequestWithURL:(NSString* _Nonnull)url parameters:(NSDictionary *_Nullable)parameters withCompletion:(kNSDataCompletionHandler)completion;
 
-#endif /* JSONRequestService_h */
+@end

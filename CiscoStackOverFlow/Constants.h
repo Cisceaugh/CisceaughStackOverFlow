@@ -6,8 +6,15 @@
 //  Copyright © 2015 Francisco Ragland. All rights reserved.
 //
 
-#ifndef Constants_h
-#define Constants_h
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+typedef void (^kNSDataCompletionHandler)(NSData * _Nullable data , NSError  * _Nullable  error);
 
 
-#endif /* Constants_h */
+
+typedef void (^kNSDictionaryCompletionHandler)(NSDictionary * _Nullable data , NSError  * _Nullable  error);
+
+typedef void (^kNSArrayCompletionHandler)(NSArray * _Nullable data , NSError  * _Nullable  error);
+
+typedef void (^kNSImageCompletionHandler)(UIImage * _Nullable data , NSError  * _Nullable  error);

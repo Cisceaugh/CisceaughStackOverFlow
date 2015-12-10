@@ -6,13 +6,13 @@
 //  Copyright © 2015 Francisco Ragland. All rights reserved.
 //
 
-#import "MenuViewController.h"
+#import "MenuTableViewController.h"
 
-@interface MenuTableViewController ()
+@interface UITableViewController ()
 
 @end
 
-@implementation MenuViewController
+@implementation MenuTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

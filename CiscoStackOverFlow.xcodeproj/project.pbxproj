@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		70567D34CF3F899783ACB40B /* libPods-CiscoStackOverFlow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 339F96F60D9969E9059DA5BF /* libPods-CiscoStackOverFlow.a */; };
+		C102FC141C18FDF500E5D06A /* SOSearchAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC131C18FDF500E5D06A /* SOSearchAPIService.m */; };
+		C102FC171C18FE8800E5D06A /* SOSearchJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC161C18FE8800E5D06A /* SOSearchJSONParser.m */; };
+		C102FC1A1C18FEB400E5D06A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC191C18FEB400E5D06A /* User.m */; };
+		C102FC1D1C18FFEB00E5D06A /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC1C1C18FFEB00E5D06A /* Question.m */; };
+		C102FC1F1C19081B00E5D06A /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C102FC1E1C19081B00E5D06A /* SearchResultTableViewCell.xib */; };
+		C102FC221C19094500E5D06A /* SearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC211C19094500E5D06A /* SearchResultTableViewCell.m */; };
+		C102FC261C191AFE00E5D06A /* ImageFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC251C191AFE00E5D06A /* ImageFetcherService.m */; };
+		C102FC2F1C1984AC00E5D06A /* SOSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC2E1C1984AC00E5D06A /* SOSearchSettings.m */; };
+		C102FC321C1984D000E5D06A /* CFSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = C102FC311C1984D000E5D06A /* CFSettings.m */; };
 		C15C5F011C1789B5002D1386 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F001C1789B5002D1386 /* main.m */; };
 		C15C5F041C1789B5002D1386 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F031C1789B5002D1386 /* AppDelegate.m */; };
 		C15C5F071C1789B5002D1386 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F061C1789B5002D1386 /* MenuTableViewController.m */; };
@@ -22,7 +31,7 @@
 		C15C5F401C17C127002D1386 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F3F1C17C127002D1386 /* MyQuestionsViewController.m */; };
 		C15C5F431C17C271002D1386 /* BurgerMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F421C17C271002D1386 /* BurgerMenuViewController.m */; };
 		C15C5F461C18E14C002D1386 /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = C15C5F451C18E14C002D1386 /* menuButton.png */; };
-		C15C5F4C1C18F5E2002D1386 /* JSONRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */; };
+		C15C5F4C1C18F5E2002D1386 /* JSONAPIRequestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5F4B1C18F5E2002D1386 /* JSONAPIRequestService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,23 @@
 		00CB702809361494DEA2EE99 /* Pods-CiscoStackOverFlow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiscoStackOverFlow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow.debug.xcconfig"; sourceTree = "<group>"; };
 		339F96F60D9969E9059DA5BF /* libPods-CiscoStackOverFlow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CiscoStackOverFlow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A41A497C6E1898A04454564 /* Pods-CiscoStackOverFlow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CiscoStackOverFlow.release.xcconfig"; path = "Pods/Target Support Files/Pods-CiscoStackOverFlow/Pods-CiscoStackOverFlow.release.xcconfig"; sourceTree = "<group>"; };
+		C102FC121C18FDDA00E5D06A /* SOSearchAPIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOSearchAPIService.h; sourceTree = "<group>"; };
+		C102FC131C18FDF500E5D06A /* SOSearchAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchAPIService.m; sourceTree = "<group>"; };
+		C102FC151C18FE4900E5D06A /* SOSearchJSONParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SOSearchJSONParser.h; sourceTree = "<group>"; };
+		C102FC161C18FE8800E5D06A /* SOSearchJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchJSONParser.m; sourceTree = "<group>"; };
+		C102FC181C18FEA000E5D06A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C102FC191C18FEB400E5D06A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C102FC1B1C18FFA100E5D06A /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		C102FC1C1C18FFEB00E5D06A /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		C102FC1E1C19081B00E5D06A /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		C102FC201C19094500E5D06A /* SearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableViewCell.h; sourceTree = "<group>"; };
+		C102FC211C19094500E5D06A /* SearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableViewCell.m; sourceTree = "<group>"; };
+		C102FC241C191AFE00E5D06A /* ImageFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFetcherService.h; sourceTree = "<group>"; };
+		C102FC251C191AFE00E5D06A /* ImageFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFetcherService.m; sourceTree = "<group>"; };
+		C102FC2D1C1984AC00E5D06A /* SOSearchSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOSearchSettings.h; sourceTree = "<group>"; };
+		C102FC2E1C1984AC00E5D06A /* SOSearchSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOSearchSettings.m; sourceTree = "<group>"; };
+		C102FC301C1984D000E5D06A /* CFSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSettings.h; sourceTree = "<group>"; };
+		C102FC311C1984D000E5D06A /* CFSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSettings.m; sourceTree = "<group>"; };
 		C15C5EFC1C1789B5002D1386 /* CiscoStackOverFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiscoStackOverFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C15C5F001C1789B5002D1386 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C15C5F021C1789B5002D1386 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,8 +98,8 @@
 		C15C5F411C17C271002D1386 /* BurgerMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BurgerMenuViewController.h; sourceTree = "<group>"; };
 		C15C5F421C17C271002D1386 /* BurgerMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BurgerMenuViewController.m; sourceTree = "<group>"; };
 		C15C5F451C18E14C002D1386 /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuButton.png; path = ../../../../Downloads/menuButton.png; sourceTree = "<group>"; };
-		C15C5F4A1C18F568002D1386 /* JSONRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONRequestService.h; sourceTree = "<group>"; };
-		C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestService.m; sourceTree = "<group>"; };
+		C15C5F4A1C18F568002D1386 /* JSONAPIRequestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONAPIRequestService.h; sourceTree = "<group>"; };
+		C15C5F4B1C18F5E2002D1386 /* JSONAPIRequestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPIRequestService.m; sourceTree = "<group>"; };
 		C15C5F4D1C18F72B002D1386 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,6 +146,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C102FC231C191A7A00E5D06A /* RequestServices */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5F4A1C18F568002D1386 /* JSONAPIRequestService.h */,
+				C15C5F4B1C18F5E2002D1386 /* JSONAPIRequestService.m */,
+				C102FC241C191AFE00E5D06A /* ImageFetcherService.h */,
+				C102FC251C191AFE00E5D06A /* ImageFetcherService.m */,
+			);
+			name = RequestServices;
+			sourceTree = "<group>";
+		};
+		C102FC271C196ECC00E5D06A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C102FC1B1C18FFA100E5D06A /* Question.h */,
+				C102FC1C1C18FFEB00E5D06A /* Question.m */,
+				C102FC181C18FEA000E5D06A /* User.h */,
+				C102FC191C18FEB400E5D06A /* User.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C102FC281C19759F00E5D06A /* JSONParser */ = {
+			isa = PBXGroup;
+			children = (
+				C102FC151C18FE4900E5D06A /* SOSearchJSONParser.h */,
+				C102FC161C18FE8800E5D06A /* SOSearchJSONParser.m */,
+			);
+			name = JSONParser;
+			sourceTree = "<group>";
+		};
+		C102FC2A1C19760000E5D06A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C102FC2D1C1984AC00E5D06A /* SOSearchSettings.h */,
+				C102FC2E1C1984AC00E5D06A /* SOSearchSettings.m */,
+				C102FC301C1984D000E5D06A /* CFSettings.h */,
+				C102FC311C1984D000E5D06A /* CFSettings.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C102FC2B1C1981E600E5D06A /* SOAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C102FC2C1C1982B500E5D06A /* WebRequest */,
+				C102FC281C19759F00E5D06A /* JSONParser */,
+			);
+			name = SOAPI;
+			sourceTree = "<group>";
+		};
+		C102FC2C1C1982B500E5D06A /* WebRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C102FC121C18FDDA00E5D06A /* SOSearchAPIService.h */,
+				C102FC131C18FDF500E5D06A /* SOSearchAPIService.m */,
+			);
+			name = WebRequest;
+			sourceTree = "<group>";
+		};
 		C15C5EF31C1789B5002D1386 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +242,7 @@
 		C15C5EFF1C1789B5002D1386 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C15C5F4D1C18F72B002D1386 /* Constants.h */,
 				C15C5F021C1789B5002D1386 /* AppDelegate.h */,
 				C15C5F031C1789B5002D1386 /* AppDelegate.m */,
 				C15C5F0E1C1789B5002D1386 /* Assets.xcassets */,
@@ -190,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				C15C5F081C1789B5002D1386 /* Main.storyboard */,
+				C102FC1E1C19081B00E5D06A /* SearchResultTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -198,12 +286,14 @@
 			isa = PBXGroup;
 			children = (
 				C15C5F441C17C27D002D1386 /* BurgerMenu */,
-				C15C5F051C1789B5002D1386 /* MenuTableViewController.h */,
-				C15C5F061C1789B5002D1386 /* MenuTableViewController.m */,
 				C15C5F381C17A443002D1386 /* OAuthWebViewController.h */,
 				C15C5F391C17A443002D1386 /* OAuthWebViewController.m */,
 				C15C5F3B1C17C050002D1386 /* ContentViewController.h */,
 				C15C5F3C1C17C050002D1386 /* ContentViewController.m */,
+				C102FC201C19094500E5D06A /* SearchResultTableViewCell.h */,
+				C102FC211C19094500E5D06A /* SearchResultTableViewCell.m */,
+				C15C5F051C1789B5002D1386 /* MenuTableViewController.h */,
+				C15C5F061C1789B5002D1386 /* MenuTableViewController.m */,
 				C15C5F3E1C17C127002D1386 /* MyQuestionsViewController.h */,
 				C15C5F3F1C17C127002D1386 /* MyQuestionsViewController.m */,
 			);
@@ -213,9 +303,10 @@
 		C15C5F371C17935C002D1386 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C15C5F4A1C18F568002D1386 /* JSONRequestService.h */,
-				C15C5F4B1C18F5E2002D1386 /* JSONRequestService.m */,
-				C15C5F4D1C18F72B002D1386 /* Constants.h */,
+				C102FC2A1C19760000E5D06A /* Settings */,
+				C102FC231C191A7A00E5D06A /* RequestServices */,
+				C102FC2B1C1981E600E5D06A /* SOAPI */,
+				C102FC271C196ECC00E5D06A /* Data */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -339,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15C5F121C1789B5002D1386 /* LaunchScreen.storyboard in Resources */,
+				C102FC1F1C19081B00E5D06A /* SearchResultTableViewCell.xib in Resources */,
 				C15C5F0F1C1789B5002D1386 /* Assets.xcassets in Resources */,
 				C15C5F461C18E14C002D1386 /* menuButton.png in Resources */,
 				C15C5F0A1C1789B5002D1386 /* Main.storyboard in Resources */,
@@ -415,13 +507,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15C5F431C17C271002D1386 /* BurgerMenuViewController.m in Sources */,
+				C102FC1D1C18FFEB00E5D06A /* Question.m in Sources */,
 				C15C5F071C1789B5002D1386 /* MenuTableViewController.m in Sources */,
-				C15C5F4C1C18F5E2002D1386 /* JSONRequestService.m in Sources */,
+				C15C5F4C1C18F5E2002D1386 /* JSONAPIRequestService.m in Sources */,
+				C102FC261C191AFE00E5D06A /* ImageFetcherService.m in Sources */,
+				C102FC321C1984D000E5D06A /* CFSettings.m in Sources */,
 				C15C5F041C1789B5002D1386 /* AppDelegate.m in Sources */,
+				C102FC2F1C1984AC00E5D06A /* SOSearchSettings.m in Sources */,
 				C15C5F3D1C17C050002D1386 /* ContentViewController.m in Sources */,
+				C102FC221C19094500E5D06A /* SearchResultTableViewCell.m in Sources */,
 				C15C5F0D1C1789B5002D1386 /* CiscoStackOverFlow.xcdatamodeld in Sources */,
 				C15C5F3A1C17A443002D1386 /* OAuthWebViewController.m in Sources */,
 				C15C5F011C1789B5002D1386 /* main.m in Sources */,
+				C102FC1A1C18FEB400E5D06A /* User.m in Sources */,
+				C102FC171C18FE8800E5D06A /* SOSearchJSONParser.m in Sources */,
+				C102FC141C18FDF500E5D06A /* SOSearchAPIService.m in Sources */,
 				C15C5F401C17C127002D1386 /* MyQuestionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
